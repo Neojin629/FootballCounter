@@ -1,0 +1,115 @@
+package com.example.android.footballcounter;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.TextView;
+
+
+/**
+ * This activity keeps track of the basketball score for 2 teams.
+ */
+public class MainActivity extends AppCompatActivity {
+
+    // Tracks the score for Team A
+    int dscore = 0;
+
+    // Tracks the score for Team B
+    int gscore = 0;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+    }
+
+    /**
+     * Increase the score for Team A by 6 points.
+     */
+    public void addSixForDolphins(View v) {
+        dscore = dscore + 6;
+        displayForTeamA(dscore);
+    }
+
+    /**
+     * Increase the score for Team A by 1 points.
+     */
+    public void addOneForDolphins(View v) {
+        dscore = dscore + 1;
+        displayForTeamA(dscore);
+    }
+
+    /**
+     * Increase the score for Team A by 2 points.
+     */
+    public void addTwoForDolphins(View v) {
+        dscore = dscore + 2;
+        displayForTeamA(dscore);
+    }
+
+    public void addThreeForDolphins(View v) {
+        dscore = dscore + 3;
+        displayForTeamA(dscore);
+    }
+
+    /**
+     * Increase the score for Team B by 6 points.
+     */
+    public void addSixForGiants(View v) {
+        gscore = gscore + 6;
+        displayForTeamB(gscore);
+    }
+
+    /**
+     * Increase the score for Team B by 1 point.
+     */
+    public void addOneForGiants(View v) {
+        gscore = gscore + 1;
+        displayForTeamB(gscore);
+    }
+
+    /**
+     * Increase the score for Team B by 2 points.
+     */
+    public void addTwoForGiants(View v) {
+        gscore = gscore + 2;
+        displayForTeamB(gscore);
+    }
+    /**
+     * Increase the score for Team B by 3 points.
+     */
+
+    public void addThreeForGiants(View v) {
+        gscore = gscore + 3;
+        displayForTeamB(gscore);
+    }
+
+    /**
+     * Resets the score for both teams back to 0.
+     */
+    public void resetScore(View v) {
+        dscore = 0;
+        gscore = 0;
+        displayForTeamA(dscore);
+        displayForTeamB(dscore);
+    }
+
+    /**
+     * Displays the given score for Team A.
+     */
+    public void displayForTeamA(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.d_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * Displays the given score for Team B.
+     */
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.g_score);
+        scoreView.setText(String.valueOf(score));
+    }
+}
+
+
