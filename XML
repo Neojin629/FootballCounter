@@ -10,134 +10,134 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:baselineAligned="false"
         android:orientation="horizontal">
 
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+            <TextView
+                android:id="@+id/miamiDolphins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/miami_dolphins"
+                android:textSize="25sp"
+                android:textStyle="italic|bold" />
 
-        <TextView
-            android:id="@+id/miamiDolphins"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:text="Miami Dolphins"
-            android:textSize="25sp"
-            android:textStyle="italic|bold" />
+            <TextView
+                android:id="@+id/dscore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/_0"
+                android:textSize="40sp"
+                android:textStyle="italic|bold" />
 
-        <TextView
-            android:id="@+id/dscore"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:padding="16dp"
-            android:text="0"
-            android:textSize="40sp"
-            android:textStyle="italic|bold" />
+            <Button
+                android:id="@+id/dtouchDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/touchdown"
+                android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/dtouchDown"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:text="Touchdown!"
-            android:textSize="24sp" />
+            <Button
+                android:id="@+id/dextraPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/extra_point"
+                android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/dextraPoint"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:text="Extra Point!"
-            android:textSize="24sp" />
+            <Button
+                android:id="@+id/dconversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/_2pt_conv"
+                android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/dconversion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:text="2Pt.Conv!"
-            android:textSize="24sp" />
+            <Button
+                android:id="@+id/dfieldGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/field_goal"
+                android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/dfieldGoal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:text="Field Goal!"
-            android:textSize="24sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nyGiants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/new_york_giants"
+                android:textSize="25sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/gscore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/_0"
+                android:textSize="40sp"
+                android:textStyle="italic|bold" />
+
+            <Button
+                android:id="@+id/gtouchDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/touchdown"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/gextraPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/extra_point"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/gconversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/_2pt_conv"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/gfieldGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/field_goal"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/nyGiants"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:text="New York Giants"
-            android:textSize="25sp"
-            android:textStyle="italic|bold" />
-
-        <TextView
-            android:id="@+id/gscore"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:padding="16dp"
-            android:text="0"
-            android:textSize="40sp"
-            android:textStyle="italic|bold" />
-
-        <Button
-            android:id="@+id/gtouchDown"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:text="Touchdown!"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/gextraPoint"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:text="Extra Point!"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/gconversion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:text="2Pt.Conv!"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/gfieldGoal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:text="Field Goal!"
-            android:textSize="24sp" />
-
-    </LinearLayout>
-
-
-</LinearLayout>
 
     <Button
         android:id="@+id/reset"
@@ -145,9 +145,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Reset"
+        android:fontFamily="sans-serif"
+        android:text="@string/reset"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif"/>
+        android:textStyle="bold" />
 
 </RelativeLayout>
