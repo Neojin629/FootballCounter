@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -30,7 +29,7 @@
                 android:textStyle="italic|bold" />
 
             <TextView
-                android:id="@+id/dscore"
+                android:id="@+id/d_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
@@ -46,7 +45,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 android:text="@string/touchdown"
-                android:textSize="24sp" />
+                android:textSize="23sp"
+                android:onClick="addSixForDolphins"/>
 
             <Button
                 android:id="@+id/dextraPoint"
@@ -54,7 +54,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 android:text="@string/extra_point"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:onClick="addOneForDolphins"/>
 
             <Button
                 android:id="@+id/dconversion"
@@ -62,7 +63,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 android:text="@string/_2pt_conv"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="addTwoForDolphins"/>
 
             <Button
                 android:id="@+id/dfieldGoal"
@@ -70,7 +72,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 android:text="@string/field_goal"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="addThreeForDolphins"/>
 
         </LinearLayout>
 
@@ -92,13 +95,13 @@
                 android:textStyle="italic|bold" />
 
             <TextView
-                android:id="@+id/gscore"
+                android:id="@+id/g_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="@string/_0"
+                android:text="@string/_0G"
                 android:textSize="40sp"
                 android:textStyle="italic|bold" />
 
@@ -107,32 +110,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
-                android:text="@string/touchdown"
-                android:textSize="24sp" />
+                android:text="@string/touchdownG"
+                android:textSize="23sp"
+                android:onClick="addSixForGiants"/>
 
             <Button
                 android:id="@+id/gextraPoint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
-                android:text="@string/extra_point"
-                android:textSize="24sp" />
+                android:text="@string/extra_pointG"
+                android:onClick="addOneForGiants"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/gconversion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
-                android:text="@string/_2pt_conv"
-                android:textSize="24sp" />
+                android:text="@string/_2pt_convG"
+                android:textSize="24sp"
+                android:onClick="addTwoForGiants"/>
 
             <Button
                 android:id="@+id/gfieldGoal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
-                android:text="@string/field_goal"
-                android:textSize="24sp" />
+                android:text="@string/field_goalG"
+                android:textSize="24sp"
+                android:onClick="addThreeForGiants"/>
 
         </LinearLayout>
 
@@ -140,7 +147,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/reset"
+        android:id="@+id/resetScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -148,6 +155,7 @@
         android:fontFamily="sans-serif"
         android:text="@string/reset"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="resetScore"/>
 
 </RelativeLayout>
