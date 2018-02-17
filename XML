@@ -18,6 +18,12 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/miamilogo"/>
+
             <TextView
                 android:id="@+id/miamiDolphins"
                 android:layout_width="match_parent"
@@ -44,7 +50,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
+                android:background="#FF9800"
                 android:text="@string/touchdown"
+                android:textColor="#64FFDA"
                 android:textSize="23sp"
                 android:onClick="addSixForDolphins"/>
 
@@ -53,7 +61,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
+                android:background="#FF9800"
                 android:text="@string/extra_point"
+                android:textColor="#64FFDA"
                 android:textSize="20sp"
                 android:onClick="addOneForDolphins"/>
 
@@ -62,7 +72,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
+                android:background="#FF9800"
                 android:text="@string/_2pt_conv"
+                android:textColor="#64FFDA"
                 android:textSize="24sp"
                 android:onClick="addTwoForDolphins"/>
 
@@ -71,11 +83,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
+                android:background="#FF9800"
                 android:text="@string/field_goal"
+                android:textColor="#64FFDA"
                 android:textSize="24sp"
                 android:onClick="addThreeForDolphins"/>
 
         </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="420dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray">
+
+        </View>
 
 
         <LinearLayout
@@ -83,6 +105,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/nyglogo"/>
+
 
             <TextView
                 android:id="@+id/nyGiants"
@@ -110,8 +138,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
+                android:background="#1A237E"
                 android:text="@string/touchdownG"
                 android:textSize="23sp"
+                android:textColor="#F44336"
                 android:onClick="addSixForGiants"/>
 
             <Button
@@ -119,7 +149,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
+                android:background="#1A237E"
                 android:text="@string/extra_pointG"
+                android:textColor="#F44336"
                 android:onClick="addOneForGiants"
                 android:textSize="20sp" />
 
@@ -128,8 +160,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
+                android:background="#1A237E"
                 android:text="@string/_2pt_convG"
                 android:textSize="24sp"
+                android:textColor="#F44336"
                 android:onClick="addTwoForGiants"/>
 
             <Button
@@ -137,8 +171,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
+                android:background="#1A237E"
                 android:text="@string/field_goalG"
                 android:textSize="24sp"
+                android:textColor="#F44336"
                 android:onClick="addThreeForGiants"/>
 
         </LinearLayout>
@@ -152,10 +188,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:background="#000000"
         android:fontFamily="sans-serif"
         android:text="@string/reset"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="#FFFFFF"
         android:onClick="resetScore"/>
 
 </RelativeLayout>
