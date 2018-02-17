@@ -31,6 +31,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:text="@string/miami_dolphins"
+                android:textColor="#000000"
                 android:textSize="25sp"
                 android:textStyle="italic|bold" />
 
@@ -42,6 +43,7 @@
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="@string/_0"
+                android:textColor="#000000"
                 android:textSize="40sp"
                 android:textStyle="italic|bold" />
 
@@ -119,6 +121,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:text="@string/new_york_giants"
+                android:textColor="#000000"
                 android:textSize="25sp"
                 android:textStyle="italic|bold" />
 
@@ -130,6 +133,7 @@
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="@string/_0G"
+                android:textColor="#000000"
                 android:textSize="40sp"
                 android:textStyle="italic|bold" />
 
@@ -188,6 +192,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
         android:background="#000000"
         android:fontFamily="sans-serif"
         android:text="@string/reset"
